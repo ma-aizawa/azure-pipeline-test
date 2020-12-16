@@ -11,10 +11,10 @@ steps:
   - bash: echo pass
     condition: |
       eq('hoge', variables['new_value'])
-  - bash: echo pass
+  - bash: echo error
     condition: |
       eq('fuga', variables['new_value'])
-  - bash: echo pass
+  - bash: echo input or
     condition: |
-      eq('hoge', variables['input_value'])
+      or(eq('hoge', variables['input_value']), eq('fuga', variables['input_value'])
 
