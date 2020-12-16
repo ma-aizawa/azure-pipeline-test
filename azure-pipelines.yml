@@ -3,4 +3,4 @@ pool:
   vmImage: ubuntu-latest
 
 steps:
-  - echo hoge
+  - bash: echo hoge
