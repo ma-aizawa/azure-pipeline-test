@@ -16,5 +16,5 @@ steps:
       eq('fuga', variables['new_value'])
   - bash: echo input or
     condition: |
-      or(eq('hoge', variables['input_value']), eq('fuga', variables['input_value'])
+      or(eq('hoge', variables['input_value']), eq('fuga', variables['input_value']))
 
