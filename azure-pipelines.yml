@@ -2,5 +2,13 @@
 pool:
   vmImage: ubuntu-latest
 
+variables:
+  new_value: 'hoge'
+
 steps:
   - bash: echo hoge
+  - bash: echo variables['new_value']
+  - bash: echo pass
+    condition: |
+      eq('hoge', variables['new_value'])
+
