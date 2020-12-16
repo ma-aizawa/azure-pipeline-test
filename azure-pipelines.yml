@@ -11,4 +11,7 @@ steps:
   - bash: echo pass
     condition: |
       eq('hoge', variables['new_value'])
+  - bash: echo pass
+    condition: |
+      eq('fuga', variables['new_value'])
 
